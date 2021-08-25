@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+* {
+  margin: 0;
+}
+body {
+  color: darkblue;
+  font-family: "Baloo 2", cursive;
+  font-size: 17px;
+}
+.heading-container {
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.712),
+    rgba(0, 0, 139, 0.87)
+  );
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  filter: invert(1);
+}
+.main-container {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.712),
+    rgba(0, 0, 139, 0.87)
+  );
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.782);
+  padding: 1rem;
+  border-radius: 12%;
+  max-width: 400px;
+  margin: auto;
+}
+.container:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.8s ease;
+  box-shadow: 0px 10px 10px 0px rgba(245, 245, 245, 0.541);
+}
+.para {
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.74);
+}
+.blue {
+  color: darkblue;
+  font-weight: 900;
+}
+span {
+  color: black;
+  font-weight: 700;
+}
+
+@media (min-width: 650px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
